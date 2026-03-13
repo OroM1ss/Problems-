@@ -142,3 +142,24 @@
 // console.log(sin_cos(1));
 
 // console.log(sin_cos(2));
+
+
+
+
+let problem_je = function (n) {
+    let main_product = 0
+    let last_step = 0
+    let krug1 = 1
+    let x = n
+    for (let i = 0;i+1 <= n; i++) {
+        krug1 = Math.sqrt(3*(x-i) + last_step)
+        last_step = krug1
+        main_product = last_step
+
+    }
+    return main_product
+}
+console.log(problem_je(1));
+console.log(problem_je(2));
+console.log(problem_je(10));
+console.log(problem_je(100));
