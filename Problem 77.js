@@ -146,20 +146,48 @@
 
 
 
-let problem_je = function (n) {
-    let main_product = 0
-    let last_step = 0
-    let krug1 = 1
-    let x = n
-    for (let i = 0;i+1 <= n; i++) {
-        krug1 = Math.sqrt(3*(x-i) + last_step)
-        last_step = krug1
-        main_product = last_step
+// let problem_je = function (n) {
+//     let main_product = 0
+//     let last_step = 0
+//     let krug1 = 1
+//     let x = n
+//     for (let i = 0;i+1 <= n; i++) {
+//         krug1 = Math.sqrt(3*(x-i) + last_step)
+//         last_step = krug1
+//         main_product = last_step
+
+//     }
+//     return main_product
+// }
+// console.log(problem_je(1));
+// console.log(problem_je(2));
+// console.log(problem_je(10));
+// console.log(problem_je(100));
+
+let problem_424 = function (s, t) {
+    let s1 = -2 * s
+    let t1 = t
+    let f1 = 0
+    let final_answer = 0
+    for (let i = 1; i <= 1; i++) {
+        f1 = (2 * t1 - s1 - Math.sin(1.17)) / (5 + Math.abs(1.17))
+        final_answer = f1 + support_problem_424(s, t)
+    }
+    return final_answer 
+}
+
+let support_problem_424 = function (s, t) {
+    let s2 = s - t
+    let t2 = t
+    let f2 = 0
+    for (let i = 1; i <= 1; i++) {
+        f = (2 * 2.2 - t - Math.sin(s2)) / (5 + Math.abs(s2))
 
     }
-    return main_product
+    return f
+
+
 }
-console.log(problem_je(1));
-console.log(problem_je(2));
-console.log(problem_je(10));
-console.log(problem_je(100));
+
+
+console.log(problem_424(2,4))
